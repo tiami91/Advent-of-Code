@@ -2,7 +2,7 @@ const fs = require('fs');
 const readline = require('readline');
 
 async function processLineByLine() {
-    const fileStream = fs.createReadStream('1 - nested loop optimize/input.txt');
+    const fileStream = fs.createReadStream('1 - sum of 2 or 3 numbers (nested loop)/input.txt');
 
     const rl = readline.createInterface({
         input: fileStream,
@@ -29,7 +29,7 @@ function find3(numbers)
                 let b = parseInt(numbers[j]);
                 let c = parseInt(numbers[k]);
                 if (i !== j && j !== k && i !== k && a + b + c === 2020) {
-                    console.log('\nThe 3 numbers that sum to 2020 are: ' + a + ' and ' + b + ' and ' + c);
+                    console.log('\nThe 3 - find path through iterating map numbers that sum to 2020 are: ' + a + ' and ' + b + ' and ' + c);
                     console.log('The product of those numbers is: ' + a * b * c);
                 }
             }

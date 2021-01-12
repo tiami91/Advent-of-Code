@@ -30,7 +30,7 @@ async function processLineByLine() {
             }
         }
 
-        //let isValid = min <= count && count <= max; //part 1 - nested loop optimize
+        //let isValid = min <= count && count <= max; //part 1 - sum of 2 or 3 numbers (nested loop)
         let isValid = validation(min, max, char, pw); //part 2 - XOR condition
 
         if(isValid){
