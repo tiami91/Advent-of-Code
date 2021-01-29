@@ -65,7 +65,7 @@ function findSeat(seat){
 
     let arrRow = Array.from(Array(128).keys());
     let arrColumn = Array.from(Array(8).keys());
-    //console.log(seat.substring(7 - self-recursive,10));
+    //console.log(seat.substring(7,10));
     let row = findRow(seat.substring(0,7), arrRow);
     let column = findColumn(seat.substring(7,10), arrColumn);
 
